@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Setup AIR</title>
+    <meta name="description" content="Adobe AIR is a cross-platform framework used by a wide range of applications and games on desktop and mobile. AIR can run on Windows, macOS, Linux, iOS, and ...">
+
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="/favicon.ico?1">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Setup AIR | Lime</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Setup AIR" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Adobe AIR is a cross-platform framework used by a wide range of applications and games on desktop and mobile. AIR can run on Windows, macOS, Linux, iOS, and Android. While AIR was originally created by Adobe, it is currently maintained with active development of new features by HARMAN. See The future of Adobe AIR and HARMAN’s AIR SDK Website for more details." />
+<meta property="og:description" content="Adobe AIR is a cross-platform framework used by a wide range of applications and games on desktop and mobile. AIR can run on Windows, macOS, Linux, iOS, and Android. While AIR was originally created by Adobe, it is currently maintained with active development of new features by HARMAN. See The future of Adobe AIR and HARMAN’s AIR SDK Website for more details." />
+<link rel="canonical" href="https://lime.openfl.org/docs/advanced-setup/air/" />
+<meta property="og:url" content="https://lime.openfl.org/docs/advanced-setup/air/" />
+<meta property="og:site_name" content="Lime" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-07-17T11:44:51-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Setup AIR" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","dateModified":"2023-07-17T11:44:51-07:00","datePublished":"2023-07-17T11:44:51-07:00","description":"Adobe AIR is a cross-platform framework used by a wide range of applications and games on desktop and mobile. AIR can run on Windows, macOS, Linux, iOS, and Android. While AIR was originally created by Adobe, it is currently maintained with active development of new features by HARMAN. See The future of Adobe AIR and HARMAN’s AIR SDK Website for more details.","headline":"Setup AIR","url":"https://lime.openfl.org/docs/advanced-setup/air/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="canonical" href="https://lime.openfl.org/docs/advanced-setup/air/">
+    <link rel="alternate" type="application/rss+xml" title="Lime" href="https://lime.openfl.org/feed.xml" />
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container navbar-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <a class="navbar-brand" href="/">
+                <span><img src="/img/logonav.png"></span> Lime
+            </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/api">API</a></li>
+                <li  class="active" ><a href="/docs/home/">Docs</a></li>
+                <!-- <li ><a href="/blog/2017/05/03/jekyll-doc-theme/">Blog</a></li> -->
+                <li><a href="http://community.openfl.org/c/lime">Community</a></li>
+            </ul>
+            <div class="navbar-right">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group has-feedback">
+                        <input id="search-box" type="text" class="form-control" placeholder="Search...">
+                        <i class="fa fa-search form-control-feedback"></i>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav">
+                    <li><a href="https://github.com/openfl/lime.openfl.org"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="page-content">
+        <div class="wrapper">
+            <div class="container">
+    <div class="row">
+        <div class="col-md-3">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+          Introduction
+        </a>
+      </h4>
+    </div>
+    <div id="collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <ul class="list-group">
+        
+          
+          
+          <a class="list-group-item " href="/docs/home/">Getting Started</a>
+        
+          
+          
+          <a class="list-group-item " href="/docs/getting-started/choosing-a-code-editor/">Choosing a Code Editor</a>
+        
+          
+          
+          <a class="list-group-item " href="/docs/getting-started/targets/">Targets</a>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+          Command-Line Tools
+        </a>
+      </h4>
+    </div>
+    <div id="collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <ul class="list-group">
+        
+          
+          
+          <a class="list-group-item " href="/docs/command-line-tools/basic-commands/">Basic Commands</a>
+        
+          
+          
+          <a class="list-group-item " href="/docs/command-line-tools/create-new-project/">Create New Project</a>
+        
+          
+          
+          <a class="list-group-item " href="/docs/command-line-tools/samples/">Samples</a>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+          Project Files
+        </a>
+      </h4>
+    </div>
+    <div id="collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <ul class="list-group">
+        
+          
+          
+          <a class="list-group-item " href="/docs/project-files/xml-format/">XML Format</a>
+        
+          
+          
+          <a class="list-group-item " href="/docs/project-files/hxp-format/">HXP Format</a>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+          Advanced Setup
+        </a>
+      </h4>
+    </div>
+    <div id="collapse-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <ul class="list-group">
+        
+          
+          
+          <a class="list-group-item " href="/docs/advanced-setup/windows/">Setup Windows</a>
+        
+          
+          
+          <a class="list-group-item " href="/docs/advanced-setup/macos/">Setup macOS</a>
+        
+          
+          
+          <a class="list-group-item " href="/docs/advanced-setup/linux/">Setup Linux</a>
+        
+          
+          
+          <a class="list-group-item " href="/docs/advanced-setup/ios/">Setup iOS</a>
+        
+          
+          
+          <a class="list-group-item " href="/docs/advanced-setup/android/">Setup Android</a>
+        
+          
+          
+          <a class="list-group-item " href="/docs/advanced-setup/flash/">Setup Flash</a>
+        
+          
+          
+          <a class="list-group-item active" href="/docs/advanced-setup/air/">Setup AIR</a>
+        
+          
+          
+          <a class="list-group-item " href="/docs/advanced-setup/html5/">Setup HTML5</a>
+        
+          
+          
+          <a class="list-group-item " href="/docs/advanced-setup/electron/">Setup Electron</a>
+        
+          
+          
+          <a class="list-group-item " href="/docs/advanced-setup/hashlink/">Setup HashLink</a>
+        
+          
+          
+          <a class="list-group-item " href="/docs/advanced-setup/neko/">Setup Neko</a>
+        
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+        </div>
+
+        <div class="col-md-9">
+            <h1>Setup AIR</h1>
+            <div id="markdown-content-container"><p><a href="https://airsdk.dev">Adobe AIR</a> is a cross-platform framework used by a wide range of applications and games on desktop and mobile. AIR can run on Windows, macOS, Linux, iOS, and Android. While AIR was originally created by Adobe, it is currently maintained with active development of new features by HARMAN. See <a href="https://theblog.adobe.com/the-future-of-adobe-air/">The future of Adobe AIR</a> and <a href="https://airsdk.dev">HARMAN’s AIR SDK Website</a> for more details.</p>
+
+<h2 id="automatic-install">Automatic Install</h2>
+
+<p>There is no automatic setup available for Adobe AIR.</p>
+
+<h2 id="manual-install">Manual Install</h2>
+
+<p>In order to build applications using Adobe AIR, you must have the AIR SDK installed.</p>
+
+<p><a href="https://airsdk.harman.com/download">Download the Adobe AIR SDK from HARMAN</a>, and extract it on your system.</p>
+
+<p>Next, open a command-prompt or terminal and run the following command (using the path to your AIR SDK):</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lime config AIR_SDK path/to/air/sdk
+</code></pre></div></div>
+
+<h2 id="build--run">Build &amp; Run</h2>
+
+<p>To compile an Adobe AIR application, run <code class="language-plaintext highlighter-rouge">lime build air</code>. Add the <code class="language-plaintext highlighter-rouge">-debug</code> option to create a build that can connect to a SWF debugger. Add the <code class="language-plaintext highlighter-rouge">-release</code> option to create a release build.</p>
+
+<p>To compile and launch an Adobe AIR application with one command, run <code class="language-plaintext highlighter-rouge">lime test air</code>. The application will run on your computer using the AIR Debug Launcher (ADL).</p>
+
+<p>To build an AIR app targeting Android, add the <code class="language-plaintext highlighter-rouge">-android</code> option. This will package an <em>.apk</em> file.</p>
+
+<p>To build an AIR app targeting iOS, add the <code class="language-plaintext highlighter-rouge">-ios</code> option. This will package an <em>.ipa</em> file.</p>
+
+<p>To build an AIR app for either Android or iOS, but test it in the AIR Debug Launcher (ADL) instead a device, add the <code class="language-plaintext highlighter-rouge">-air-simulator</code> option to skip packaging the <em>.apk</em> or <em>.ipa</em> file.</p>
+
+<p>When targeting AIR for iOS, specify the <code class="language-plaintext highlighter-rouge">-appstore</code> option to create a build to be submitted to the iOS App Store. Alternatively, specify the <code class="language-plaintext highlighter-rouge">-adhoc</code> option for ad hoc distribution to specific devices outside of the App Store.</p>
+
+<h3 id="code-signing">Code Signing</h3>
+
+<p>During development, AIR builds will automatically use a self-signed certificate. To distribute AIR apps, you must specify <a href="https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7f72.html">code signing</a> options. Code signing options may may be added to a <code class="language-plaintext highlighter-rouge">&lt;certificate/&gt;</code> element in your <a href="../../project-files/xml-format/"><em>project.xml</em></a> file. You may need to add the <code class="language-plaintext highlighter-rouge">if="air"</code> attribute, if your app targets any other platforms besides AIR.</p>
+
+<p>To use a specific certificate file, specify the <code class="language-plaintext highlighter-rouge">path</code> attribute.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;certificate</span> <span class="na">path=</span><span class="s">"path/to/keystore.p12"</span> <span class="na">if=</span><span class="s">"air"</span><span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<p>You should <strong>not</strong> save a keystore password in your <a href="../../project-files/xml-format/"><em>project.xml</em></a> file because it is a serious security risk. It is technically allowed, though.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- you should NOT specify the password like this --&gt;</span>
+<span class="nt">&lt;certificate</span> <span class="na">path=</span><span class="s">"path/to/keystore.p12"</span> <span class="na">password=</span><span class="s">"hunter2"</span> <span class="na">if=</span><span class="s">"air"</span><span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<p>Instead, you have two options.</p>
+
+<ol>
+  <li>
+    <p>Specify the password on the command line. Example: <code class="language-plaintext highlighter-rouge">--certificate-password=hunter2</code></p>
+  </li>
+  <li>
+    <p>Don’t specify the password, and wait for the build to request it automatically.</p>
+  </li>
+</ol>
+
+<p>Instead of using a certificate file, developers on macOS may sign iOS and macOS apps using credentials stored in their Keychain.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;certificate</span> <span class="na">type=</span><span class="s">"KeychainStore"</span> <span class="na">alias=</span><span class="s">"Apple Development: Team Name (XXXXXXXXXX)"</span> <span class="na">if=</span><span class="s">"air ios"</span><span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<h2 id="packaging-for-distribution">Packaging for distribution</h2>
+
+<p>For projects targeting mobile, <code class="language-plaintext highlighter-rouge">lime build air -android</code> and <code class="language-plaintext highlighter-rouge">lime build air -ios</code> compile the <em>.swf</em>, copy all necessary assets, and package the Adobe AIR app as either <em>.apk</em> or <em>.ipa</em> for distribution to app stores. However, when targeting desktop, <code class="language-plaintext highlighter-rouge">lime build air</code> compiles the <em>.swf</em> file and copies assets only. This is enough for debugging in the AIR Debug Launcher (ADL), but it is not enough to distribute the app to users.</p>
+
+<p>To package an Adobe AIR desktop app for distrubution, run <code class="language-plaintext highlighter-rouge">lime build air</code> and then run <code class="language-plaintext highlighter-rouge">lime deploy air</code>.</p>
+
+<h2 id="using-swc-libraries">Using SWC libraries</h2>
+
+<p>To use a <em>.swc</em> library with Haxe that was compiled from ActionScript, add Haxe’s <code class="language-plaintext highlighter-rouge">-swf-lib</code> command line option. For instance, you can add it to your <a href="../../project-files/xml-format/"><em>project.xml</em></a> file using the <a href="../../project-files/xml-format/#haxeflag"><code class="language-plaintext highlighter-rouge">&lt;haxeflag/&gt;</code></a> element.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;haxeflag</span> <span class="na">name=</span><span class="s">"-swf-lib"</span> <span class="na">value=</span><span class="s">"path/to/example.swc"</span><span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<h2 id="using-air-native-extensions">Using AIR Native Extensions</h2>
+
+<p>To use <em>.ane</em> native extension files, add each one to your project’s native dependencies. For instance, you can add it to your <a href="../../project-files/xml-format/"><em>project.xml</em></a> file using the <a href="../../project-files/xml-format/#dependency"><code class="language-plaintext highlighter-rouge">&lt;dependency/&gt;</code></a> element.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dependency</span> <span class="na">name=</span><span class="s">"com.example.MyNativeExtension"</span> <span class="na">path=</span><span class="s">"path/to/com.example.MyNativeExtension.ane"</span> <span class="na">if=</span><span class="s">"air"</span><span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">name</code> attribute is the native extension’s ID. The <code class="language-plaintext highlighter-rouge">path</code> attribute is the relative path to the <em>.ane</em> file.</p>
+
+<h2 id="forums">Forums</h2>
+
+<p>If you encounter any problems when setting up Lime for AIR, please visit the <a href="http://community.openfl.org/c/help">forums</a>.</p>
+</div>
+            <p class="text-center">
+              <br />
+              <a target="_blank" href="https://github.com/openfl/lime.openfl.org/blob/master/_docs/advanced-setup/air.md" class="btn btn-default githubEditButton" role="button">
+                <i class="fa fa-pencil fa-lg"></i> Improve this page
+              </a>
+            </p>
+            <hr>
+            
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <ul class="pager">
+      
+        
+        
+        <li class="previous">
+          <a href="/docs/advanced-setup/flash/">
+            <span aria-hidden="true">&larr;</span> Previous
+          </a>
+        </li>
+      
+
+      
+        
+        
+        <li class="next">
+          <a href="/docs/advanced-setup/html5/">
+            Next <span aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+      
+    </div>
+    <div class="clear"></div>
+    
+
+        </div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="container">
+
+        <p class="text-center">
+            &copy;2013-2023 Lime |
+            Powered by <a href="https://github.com/aksakalli/jekyll-doc-theme">Jekyll Doc Theme</a>
+        </p>
+        <!-- <p class="text-muted">Place sticky footer content here.</p> -->
+    </div>
+</footer>
+
+    <script>
+  var baseurl = ''
+</script>
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="/js/bootstrap.min.js "></script>
+<script src="/js/typeahead.bundle.min.js "></script>
+
+<script src="/js/main.js "></script>
+
+</body>
+
+</html>

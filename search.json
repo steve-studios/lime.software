@@ -1,0 +1,175 @@
+[
+
+  
+    
+    
+    {
+      "title": "Getting Started",
+      "url": "/docs/home/"
+
+    },
+  
+    
+    
+    {
+      "title": "Choosing a Code Editor",
+      "url": "/docs/getting-started/choosing-a-code-editor/"
+
+    },
+  
+    
+    
+    {
+      "title": "Targets",
+      "url": "/docs/getting-started/targets/"
+
+    },
+  
+
+  
+    
+    
+    {
+      "title": "Basic Commands",
+      "url": "/docs/command-line-tools/basic-commands/"
+
+    },
+  
+    
+    
+    {
+      "title": "Create New Project",
+      "url": "/docs/command-line-tools/create-new-project/"
+
+    },
+  
+    
+    
+    {
+      "title": "Samples",
+      "url": "/docs/command-line-tools/samples/"
+
+    },
+  
+
+  
+    
+    
+    {
+      "title": "XML Format",
+      "url": "/docs/project-files/xml-format/"
+
+    },
+  
+    
+    
+    {
+      "title": "HXP Format",
+      "url": "/docs/project-files/hxp-format/"
+
+    },
+  
+
+  
+    
+    
+    {
+      "title": "Setup Windows",
+      "url": "/docs/advanced-setup/windows/"
+
+    },
+  
+    
+    
+    {
+      "title": "Setup macOS",
+      "url": "/docs/advanced-setup/macos/"
+
+    },
+  
+    
+    
+    {
+      "title": "Setup Linux",
+      "url": "/docs/advanced-setup/linux/"
+
+    },
+  
+    
+    
+    {
+      "title": "Setup iOS",
+      "url": "/docs/advanced-setup/ios/"
+
+    },
+  
+    
+    
+    {
+      "title": "Setup Android",
+      "url": "/docs/advanced-setup/android/"
+
+    },
+  
+    
+    
+    {
+      "title": "Setup Flash",
+      "url": "/docs/advanced-setup/flash/"
+
+    },
+  
+    
+    
+    {
+      "title": "Setup AIR",
+      "url": "/docs/advanced-setup/air/"
+
+    },
+  
+    
+    
+    {
+      "title": "Setup HTML5",
+      "url": "/docs/advanced-setup/html5/"
+
+    },
+  
+    
+    
+    {
+      "title": "Setup Electron",
+      "url": "/docs/advanced-setup/electron/"
+
+    },
+  
+    
+    
+    {
+      "title": "Setup HashLink",
+      "url": "/docs/advanced-setup/hashlink/"
+
+    },
+  
+    
+    
+    {
+      "title": "Setup Neko",
+      "url": "/docs/advanced-setup/neko/"
+
+    },
+  
+
+
+  
+  {
+  "title": "Jekyll Doc Theme is published!",
+  "url": "/blog/2017/05/03/jekyll-doc-theme/"
+  },
+  
+  {
+  "title": "Welcome to Jekyll!",
+  "url": "/blog/2017/02/01/welcome-to-jekyll/"
+  }
+  
+]
